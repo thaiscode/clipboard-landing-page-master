@@ -17,11 +17,11 @@ img {
     height: auto;
 }
 
-h1,h2, h3 {
+h1, h2, h3 {
     color: var(--dark-grayish-blue);
 }
 
-h1, h2 {
+h1 {
     font-size: 2.1rem;
 }
 
@@ -59,7 +59,7 @@ body {
     height: auto;
     margin: 0 auto;
     background: url(./images/bg-header-desktop.png) no-repeat;
-    padding: 7rem 1rem;
+    padding: 7rem 1rem 3rem 1rem;
 }
 
 .header__logo {
@@ -72,7 +72,7 @@ body {
     margin: 3rem auto 1rem auto;
 }
 
-.header__paragraph, .desktop-section__paragraph {
+.header__paragraph, .desktop-section__paragraph, .mobile-section__paragraph {
     max-width: 530px;
     text-align: center;
     margin: 0 auto;
@@ -102,6 +102,12 @@ body {
 .button:nth-child(2) {
     background: var(--light-blue);
     border: var(--light-blue);
+}
+
+/* MAIN */
+
+.main {
+    padding: 4rem 1rem;
 }
 
 .desktop-section__title {
@@ -140,9 +146,23 @@ body {
     margin-bottom: 2.5rem;
 }
 
+.mobile-section {
+    margin-top: 10rem;
+}
 
+.mobile-section__paragraph {
+    max-width: 600px;
+    padding: 0 1.5rem;
+    margin: 1.5rem auto 5rem auto;
+}
 
-
+.mobile-section__paragraph:nth-child(2) {
+    margin-bottom: 0;
+}
+.mobile-section__img {
+    width: 90%;
+    
+}
 
 .attribution { 
     font-size: 11px; 
