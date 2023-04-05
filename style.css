@@ -17,15 +17,32 @@ img {
     height: auto;
 }
 
-h1, h2 {
-    font-size: 2rem;
+h1,h2, h3 {
     color: var(--dark-grayish-blue);
+}
+
+h1, h2 {
+    font-size: 2.1rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
 }
 
 p {
     font-size: 0.9rem;
     color: var(--grayish-blue);
     line-height: 150%;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 body {
@@ -43,22 +60,20 @@ body {
     margin: 0 auto;
     background: url(./images/bg-header-desktop.png) no-repeat;
     padding: 7rem 1rem;
-    border: 1px solid red;
 }
 
 .header__logo {
     width: 100px;
 }
 
-.header__title {
+.header__title, .desktop-section__title {
     min-width: 320px;
-    max-width: 500px;
-    font-size: 2rem;
+    max-width: 530px;
     margin: 3rem auto 1rem auto;
 }
 
-.header__paragraph {
-    max-width: 500px;
+.header__paragraph, .desktop-section__paragraph {
+    max-width: 530px;
     text-align: center;
     margin: 0 auto;
 }
@@ -67,7 +82,6 @@ body {
     max-width: 400px;
     height: auto;
     margin: 2rem auto auto auto;
-    
 }
 
 .button {
@@ -90,6 +104,44 @@ body {
     border: var(--light-blue);
 }
 
+.desktop-section__title {
+    margin-top: 0;
+}
+
+.desktop-section__paragraph {
+    max-width: 550px;
+    margin-bottom: 3rem;
+}
+
+.desktop-section__features {
+    max-width: 95%;
+    margin-left: -2rem; 
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.features__img {
+    width: 50%;
+}
+
+.features__text {
+    min-width: 50%;
+    height: 430px;
+    text-align: left;
+    padding-left: 5rem;
+}
+
+.features__title {
+    margin-bottom: 0.5rem;
+}
+
+.features__paragraph {
+    width: 50%;
+    margin-bottom: 2.5rem;
+}
+
+
+
 
 
 .attribution { 
@@ -101,14 +153,29 @@ body {
     color: var(--light-blue); 
 }
 
-.flex {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
-}
-
 .flex-item {
     /*flex-grow: 1;
     flex-shrink: 1;*/
 }
 
+@media screen and (max-width: 1360px) {
+    .desktop-section__features {
+        width: 100%;
+        margin: 0 auto; 
+    }
+
+    .features__img {
+        width: 90%;
+        margin: 0 auto 3rem auto;
+    }
+    
+    .features__text {
+        min-width: 100%;
+        text-align: center;
+        padding: 2.5rem;
+    }
+
+    .features__paragraph {
+        width: 100%;
+    }
+}
