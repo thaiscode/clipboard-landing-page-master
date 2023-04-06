@@ -156,9 +156,6 @@ body {
     margin: 1.5rem auto 5rem auto;
 }
 
-.mobile-section__paragraph:nth-child(2) {
-    margin-bottom: 0;
-}
 .mobile-section__img {
     width: 90%;
     
