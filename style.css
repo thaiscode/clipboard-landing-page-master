@@ -150,7 +150,7 @@ body {
     margin-top: 10rem;
 }
 
-.mobile-section__paragraph {
+.mobile-section__paragraph, .features-section__paragraph {
     max-width: 600px;
     padding: 0 1.5rem;
     margin: 1.5rem auto 5rem auto;
@@ -160,6 +160,39 @@ body {
     width: 90%;
     margin: 0 auto;
 }
+
+.features-section {
+    
+}
+.features-section__details {
+    width: 90%;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 0 auto 4rem auto;
+}
+
+.details-box {
+    min-width: 300px;
+    max-width: 317px;
+    margin-bottom: 3rem;
+}
+
+.details-box__title {
+    margin: 1.5rem 0 1rem 0;
+}
+
+.features-section__logo {
+    width: 90%;
+    justify-content: space-around;
+    align-items: baseline;
+    margin: 0 auto;
+}
+
+.features-section__logo img {
+    margin: 2rem 1rem;
+}
+
+
 
 .attribution { 
     font-size: 11px; 
