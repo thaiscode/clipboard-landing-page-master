@@ -66,29 +66,29 @@ body {
     width: 100px;
 }
 
-.header__title, .desktop-section__title {
+.header__title, .desktop-section__title, .main-footer__title {
     min-width: 320px;
     max-width: 530px;
     margin: 3rem auto 1rem auto;
 }
 
-.header__paragraph, .desktop-section__paragraph, .mobile-section__paragraph {
+.header__paragraph, .desktop-section__paragraph, .mobile-section__paragraph, .main-footer__paragraph {
     max-width: 530px;
     text-align: center;
     margin: 0 auto;
 }
 
 .header__button {
-    max-width: 400px;
+    max-width: 450px;
     height: auto;
     margin: 2rem auto auto auto;
 }
 
 .button {
-    width: 180px;
+    width: 200px;
     height: 50px;
     border-radius: 50px;
-    padding: 0 1remrem;
+    padding: 0 1rem;
     color: var(--white);
     font-size: 1rem;
     font-family: 'Bai Jamjuree', sans-serif;
@@ -97,11 +97,14 @@ body {
 .button:nth-child(1) {
     background: var(--strong-cyan);
     border: var(--strong-cyan);
+    margin-bottom: 1rem;
+    box-shadow: inset 2px -2px 0px 0px hsl(171, 88%, 35%);
 }
 
 .button:nth-child(2) {
     background: var(--light-blue);
     border: var(--light-blue);
+    box-shadow: inset 2px -2px 0px 0px hsl(233, 100%, 60%);
 }
 
 /* MAIN */
@@ -161,9 +164,6 @@ body {
     margin: 0 auto;
 }
 
-.features-section {
-    
-}
 .features-section__details {
     width: 90%;
     justify-content: space-around;
@@ -192,7 +192,9 @@ body {
     margin: 2rem 1rem;
 }
 
-
+.main-footer {
+    padding: 5rem 1rem;
+}
 
 .attribution { 
     font-size: 11px; 
@@ -227,5 +229,9 @@ body {
 
     .features__paragraph {
         width: 100%;
+    }
+
+    .button {
+        width: 90%;
     }
 }
